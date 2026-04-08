@@ -1,59 +1,130 @@
-# 101378582LabTest2Comp3133
+# Harry Potter Character Explorer 
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
+## Description
 
-## Development server
+This project is an Angular application built as part of COMP 3133 Lab Test 2.
+The application consumes a public API to display Harry Potter character data, allowing users to browse, filter, and view detailed information about characters.
 
-To start a local development server, run:
+---
+
+##  Features Implemented
+
+*  Display a list of Harry Potter characters
+*  Filter characters by house (Gryffindor, Slytherin, Hufflepuff, Ravenclaw)
+*  View detailed information for each character
+*  API integration using Angular HttpClient
+*  State management using Angular Signals
+*  Clean and responsive UI with CSS
+
+---
+
+##  Technologies Used
+
+* Angular (latest version)
+* TypeScript
+* Angular HttpClient
+* Angular Signals
+* HTML & CSS
+
+---
+
+##  API Used
+
+Harry Potter API:
+https://hp-api.onrender.com/
+
+---
+
+##  Screenshots
+
+### 1. Character List
+
+Displays all characters with image, name, and house.
+![Character List](screenshots/fs-labtest-1.png)
+
+### 2. Filter by House
+
+Dropdown filter to display characters based on selected house.
+![Filter](screenshots/fs-labtest-2.png)
+![Filter](screenshots/fs-labtest-3.png)
+
+### 3. Character Details
+
+Detailed page showing character information including:
+
+* Species
+* House
+* Wizard status
+* Ancestry
+* Wand (wood, core, length)
+* Actor
+
+![Details](screenshots/fs-labtest-4.png)
+
+---
+
+##  How to Run the Project
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your_username/YOUR_REPO_NAME.git
+```
+
+2. Navigate into the project folder:
+
+```bash
+cd your_project_name
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Run the application:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+5. Open in browser:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
+##  Live Deployment
 
-## Building
+(Insert your Vercel / Render link here)
 
-To build the project run:
+---
 
-```bash
-ng build
-```
+##  Project Structure
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+* components/
 
-## Running unit tests
+  * characterlist
+  * characterfilter
+  * characterdetails
+* services/
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+  * character.service.ts
+* models/
 
-```bash
-ng test
-```
+  * character.ts
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+##  Summary
 
-```bash
-ng e2e
-```
+This project demonstrates the use of Angular to build a dynamic, data-driven web application using a public API. It includes component-based architecture, routing, API integration, and user interaction features such as filtering and navigation.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+---
 
-## Additional Resources
+## Developed by:
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Amelework Murti
