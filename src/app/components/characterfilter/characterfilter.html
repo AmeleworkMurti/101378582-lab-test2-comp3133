@@ -1,0 +1,19 @@
+<h2>Filter by House</h2>
+
+<select (change)="filterByHouse($any($event.target).value)">
+  <option value="">Select House</option>
+
+  @for (house of houses; track house) {
+    <option [value]="house">{{ house }}</option>
+  }
+</select>
+
+<div class="grid">
+  @for (char of characters(); track char.id) {
+    <div class="card">
+      <img [src]="char.image" />
+      <h3>{{ char.name }}</h3>
+      <p>{{ char.house }}</p>
+    </div>
+  }
+</div>
