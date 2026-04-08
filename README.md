@@ -99,7 +99,7 @@ http://localhost:4200
 
 ##  Live Deployment
 
-(Insert your Vercel / Render link here)
+https://101378582-lab-test2-comp3133.vercel.app/
 
 ---
 
